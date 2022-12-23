@@ -1,0 +1,14 @@
+{
+  "name": "unodostres",
+  "version": "1.0.0",
+  "description": "Automation API",
+  "main": "index.js",
+  "scripts": {
+    "test-api": "newman run ./unodostres.postman_collection.json -e ./unodostresQA.postman_environment.json"
+  },
+  "author": "Monica Ceron",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^5.3.2"
+  }
+}
