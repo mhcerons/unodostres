@@ -4,11 +4,15 @@
   "description": "Automation API",
   "main": "index.js",
   "scripts": {
-    "test-api": "newman run ./unodostres.postman_collection.json -e ./unodostresQA.postman_environment.json"
+    "test-api-postman": "newman run ./unodostres.postman_collection.json -e ./unodostresQA.postman_environment.json",
+    "test-api-mocha-chai": "mocha --timeout 180000 --exit test_API/*"
   },
   "author": "Monica Ceron",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.2.0",
     "newman": "^5.3.2"
   }
 }
